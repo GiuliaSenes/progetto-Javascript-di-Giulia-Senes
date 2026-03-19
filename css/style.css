@@ -1,36 +1,44 @@
-body{
+body {
     background-color: rgb(207, 177, 231);
- }
+    margin: 0;
+}
 
-/* Stile personalizzato per il display del contatore */
+/* SPAN */
 .counter-display {
     width: 90%;
-    max-width: 500px;
+    max-width: 500px; /* Su PC non supererà mai i 500px */
     height: 150px;
-    border-radius: 30px;
+    margin-bottom: 2rem;
     background-color: rgba(227, 219, 227, 0.397);
     border: 2px solid rgb(128, 35, 128);
+    border-radius: 30px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-/* Dimensione minima pulsanti */
-.btn {
-    min-width: 80px;
-}
-
+/*CONTENITORE dei bottoni */
 .flex-wrap {
-    max-width: 320px !important; /* Per far stare due bottoni affiancati */
-    margin: 0 auto;             /* Centra il blocco dei bottoni */
+    max-width: 400px !; /* Impedisce ai bottoni di allargarsi troppo su PC */
+    gap: 10px !;
 }
 
+/*MOBILE */
+@media (max-width: 576px) {
+    .counter-display {
+        height: 130px !; /* Leggermente più basso su mobile */
+        font-size: 3rem !;
+    }
 
-.btn-success, .btn-secondary {
-    flex: 1 1 40% !important;   /* Occupano circa metà spazio ciascuno */
-    min-width: 100px;
-}
-
-/*Tasto reset a capo*/
-.btn-outline-danger {
-    margin-top: 10px !important;
+    /* Forza il tasto Reset ad andare a capo solo su mobile */
+    .btn-outline-danger {
+        flex: 1 1 100% !; 
+        margin-top: 10px !;
+    }
+    
+    /* Tasti + e - affiancati */
+    .btn-success, .btn-secondary {
+        flex: 1 1 45% !;
+    }
 }
