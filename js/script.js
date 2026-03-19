@@ -18,7 +18,7 @@ divContainer.classList.add("container", "min-vh-100", "d-flex", "flex-column", "
 DivBtn.classList.add("d-flex", "justify-content-center", "align-items-center", "gap-2", "flex-wrap");
 btnPlus.classList.add("btn", "btn-lg", "btn-success", "px-4", "py-2");
 btnMinus.classList.add("btn", "btn-lg", "btn-secondary", "px-4", "py-2");
-btnReset.classList.add("btn", "btn-lg", "btn-outline-danger", "px-4", "py-2");
+btnReset.classList.add("btn", "btn-lg", "btn-outline-danger", "px-4", "py-2", "w-100");
 span.classList.add("counter-display", "display-1", "card", "shadow-lg", "mb-5", "d-flex", "justify-content-center", "align-items-center");
 
 // Logica dei pulsanti

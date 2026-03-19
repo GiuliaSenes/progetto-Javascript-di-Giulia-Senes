@@ -19,3 +19,18 @@ body{
     min-width: 80px;
 }
 
+.flex-wrap {
+    max-width: 320px !important; /* Per far stare due bottoni affiancati */
+    margin: 0 auto;             /* Centra il blocco dei bottoni */
+}
+
+
+.btn-success, .btn-secondary {
+    flex: 1 1 40% !important;   /* Occupano circa metà spazio ciascuno */
+    min-width: 100px;
+}
+
+/*Tasto reset a capo*/
+.btn-outline-danger {
+    margin-top: 10px !important;
+}
