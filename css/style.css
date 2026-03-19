@@ -1,13 +1,21 @@
+body{
+    background-color: rgb(207, 177, 231);
+ }
+
 /* Stile personalizzato per il display del contatore */
 .counter-display {
     width: 90%;
     max-width: 500px;
     height: 150px;
     border-radius: 30px;
-    background-color: white;
+    background-color: rgba(227, 219, 227, 0.397);
+    border: 2px solid rgb(128, 35, 128);
+    font-weight: bold;
 }
 
+ù
 /* Dimensione minima pulsanti */
 .btn {
     min-width: 80px;
 }
+

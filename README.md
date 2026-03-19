@@ -12,4 +12,4 @@ Un'applicazione web minimalista creata in **JavaScript puro** (Vanilla JS) che p
 - **HTML5/CSS3**: Struttura e personalizzazione di base.
 - **Bootstrap 5**: Layout responsive e componenti UI.
 
-## 💻 Github: https://github.com/GiuliaSenes
+## 💻 Github: https://github.com/GiuliaSenes/progetto-Javascript-di-Giulia-Senes
