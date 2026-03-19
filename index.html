@@ -6,79 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="css/style.css">
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
         crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <script>
-        let count = 0
-
-        const divContainer = document.createElement("div");
-        const span = document.createElement("span");
-        span.textContent = count;
-        const DivBtn = document.createElement("div");
-
-        const btnMinus = document.createElement("button");
-        const btnPlus = document.createElement("button");
-        const btnReset = document.createElement("button");
-
-        btnPlus.textContent = "+";
-        btnMinus.textContent = "-";
-        btnReset.textContent = "Reset";
-
-        divContainer.classList.add("container", "min-vh-100", "d-flex", "flex-column", "justify-content-center", "align-items-center", "gap-3","p-3")
-        DivBtn.classList.add("d-flex", "justify-content-center", "align-items-center", "gap-2", "flex-wrap")
-        btnPlus.classList.add("btn", "btn-lg", "btn-success")
-        btnMinus.classList.add("btn", "btn-lg", "btn-secondary")
-        btnReset.classList.add("btn", "btn-lg", "btn-outline-danger")
-        span.classList.add("display-1", "card", "shadow-lg", "mb-5", "d-flex", "justify-content-center", "align-items-center");
-
-        // dimensione span
-        span.style.width = "90%";       // Occupa il 90% dello schermo sui piccoli dispositivi
-        span.style.maxWidth = "500px";  // Ma non supera mai i 500px sui desktop
-        span.style.height = "150px";
-        span.style.borderRadius = "30px";
-
-        // bottoni responsive
-        [btnMinus, btnPlus, btnReset].forEach(btn => {
-            btn.classList.add("px-4", "py-2");
-            btn.style.minWidth = "80px";
-        });
 
 
 
-        btnPlus.addEventListener("click", () => {
-            span.textContent = ++count
-        });
-        btnMinus.addEventListener("click", () => {
-            if (count > 0) {
-                span.textContent = --count
-            }
-        });
-        btnReset.addEventListener("click", () => {
-            count = 0;
-            span.textContent = count;
-        })
-
-        DivBtn.appendChild(btnMinus);
-        DivBtn.appendChild(btnPlus);
-        divContainer.appendChild(span);
 
 
 
-        DivBtn.appendChild(btnReset);
-        divContainer.appendChild(DivBtn);
-
-        document.body.appendChild(divContainer);
-
-
-    </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

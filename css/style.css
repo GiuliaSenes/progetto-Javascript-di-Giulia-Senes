@@ -1,0 +1,13 @@
+/* Stile personalizzato per il display del contatore */
+.counter-display {
+    width: 90%;
+    max-width: 500px;
+    height: 150px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+/* Dimensione minima pulsanti */
+.btn {
+    min-width: 80px;
+}
