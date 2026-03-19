@@ -19,7 +19,7 @@ DivBtn.classList.add("d-flex", "justify-content-center", "align-items-center", "
 btnPlus.classList.add("btn", "btn-lg", "btn-success", "px-4", "py-2");
 btnMinus.classList.add("btn", "btn-lg", "btn-secondary", "px-4", "py-2");
 btnReset.classList.add("btn", "btn-lg", "btn-outline-danger", "px-4", "py-2");
-span.classList.add("display-1", "card", "shadow-lg", "mb-5", "d-flex", "justify-content-center", "align-items-center", "counter-display");
+span.classList.add("counter-display", "display-1", "card", "shadow-lg", "mb-5", "d-flex", "justify-content-center", "align-items-center");
 
 // Logica dei pulsanti
 btnPlus.addEventListener("click", () => {
