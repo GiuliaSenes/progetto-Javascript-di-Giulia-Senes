@@ -20,25 +20,25 @@ body {
 
 /*CONTENITORE dei bottoni */
 .flex-wrap {
-    max-width: 400px !; /* Impedisce ai bottoni di allargarsi troppo su PC */
-    gap: 10px !;
+    max-width: 400px; /* Impedisce ai bottoni di allargarsi troppo su PC */
+    gap: 10px;
 }
 
 /*MOBILE */
 @media (max-width: 576px) {
     .counter-display {
-        height: 130px !; /* Leggermente più basso su mobile */
-        font-size: 3rem !;
+        height: 130px; /* Leggermente più basso su mobile */
+        font-size: 3rem ;
     }
 
     /* Forza il tasto Reset ad andare a capo solo su mobile */
     .btn-outline-danger {
-        flex: 1 1 100% !; 
-        margin-top: 10px !;
+        flex: 1 1 100%; 
+        margin-top: 10px;
     }
     
     /* Tasti + e - affiancati */
     .btn-success, .btn-secondary {
-        flex: 1 1 45% !;
+        flex: 1 1 45% ;
     }
 }
